@@ -1,0 +1,23 @@
+{template 'common/header'}
+<form action="" type="post">
+    <input type="hidden" name="c" value="site" />
+    <input type="hidden" name="a" value="entry" />
+    <input type="hidden" value="27" name="eid">
+    <input type="hidden" value="update" name="op">
+    <input type="hidden" value="lx_article" name="m">
+    <input type="hidden" value="{$id}" name="id">
+    <div class="form-group">
+        <label for="title">请输入文章标题</label>
+        <input type="input" class="form-control" id="title"  name="title" value="{$result['title']}">
+    </div>
+    <div class="form-group">
+        <label for="author">请输入作者</label>
+        <input type="input" class="form-control" id="author"  name="author" value="{$result['author']}">
+    </div>
+    <div class="form-group">
+        <label for="content">请输入内容</label>
+        <p><textarea name="content"  cols="130" rows="10" id="content" >{$result['content']}</textarea></p>
+    </div>
+    <button type="submit" class="btn btn-primary" id="sub">提交</button>
+</form>
+{template 'common/footer'}

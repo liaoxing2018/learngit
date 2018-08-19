@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.we7.cc" versionCode="">
+	
+	<application setting='false'>
+		<name><![CDATA[文章管理系统]]></name>
+
+		<identifie><![CDATA[lx_article]]></identifie>
+
+		<version><![CDATA[1.0.0]]></version>
+
+		<ability><![CDATA[文章管理系统]]></ability>
+
+		<type><![CDATA[business]]></type>
+
+		<description><![CDATA[文章111]]></description>
+
+		<author><![CDATA[药争先]]></author>
+
+		<url><![CDATA[]]></url>
+
+		<setting><![CDATA[]]></setting>
+
+	</application>
+
+	
+	<platform>
+		<rule embed="false" />
+
+		<rule embed="false" />
+
+	<supports>
+
+			<item type="app" />
+			<item type="wxapp" />
+			<item type="webapp" />
+	</supports>
+
+	</platform>
+
+	
+	<bindings>
+
+		<cover>
+			<entry title="封面管理" do="poster_mange" state="manage" direct="" />
+		</cover>
+
+		<menu>
+			<entry title="文章列表" do="article_list" state="操作" direct="1" />
+		</menu>
+
+		<home>
+			<entry title="设置首页图标" do="logo" state="dasd" direct="" />
+		</home>
+
+		<profile>
+			<entry title="个人中心" do="my_index" state="个人中心" direct="" />
+		</profile>
+
+		<function>
+			<entry title="独立功能" do="Independent_function" state="独立功能" direct="" />
+		</function>
+
+	</bindings>
+
+	<install><![CDATA[]]></install>
+	<uninstall><![CDATA[]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>

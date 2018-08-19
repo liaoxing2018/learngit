@@ -1,0 +1,27 @@
+{template 'common/header'}
+<div class="panel panel-default">
+    <div class="panel-heading">文章列表</div>
+    <div>
+        <a type="button" class="btn btn-success"  href="{php echo $this->createWebUrl('Add_article', array('op' => 'add'))}">添加文章</a>
+    </div>
+    <table class="table">
+        <tr>
+            <th>id</th>
+            <th>标题</th>
+            <th>作者</th>
+            <th>操作</th>
+        </tr>
+        {loop $list1 $index $item}
+        <tr>
+            <td>{$item["Id"]}</td>
+            <td>{$item["title"]}</td>
+            <td>{$item["author"]}</td>
+            <td>
+                <a type="button" class="btn btn-info"  href="{php echo $this->createWebUrl('Add_article', array('op' => 'edit','id'=>{$item['Id']}))}">修改</a>
+                <a type="button" class="btn btn-danger" href="{php echo $this->createWebUrl('Add_article', array('op' => 'del','id'=>{$item['Id']}))}">删除</a>
+            </td>
+        </tr>
+        {/loop}
+    </table>
+</div>
+{template 'common/footer'}
